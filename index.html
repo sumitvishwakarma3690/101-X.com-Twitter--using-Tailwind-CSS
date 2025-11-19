@@ -9,10 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=gif_box" />
-    <link rel="stylesheet" href="https://sets.hugeicons.com/YOUR-SET-ID.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://sets.hugeicons.com/YOUR-SET-ID.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=gif_box" />
+
     <link rel="shortcut icon" href="//abs.twimg.com/favicons/twitter.3.ico">
     <link rel="stylesheet" href="src/output.css">
 
@@ -116,7 +114,7 @@
                     <div class="w-[90%] h-[0.2px] bg-gray-700 my-3"></div>
                     <div class="blueicons flex gap-2">
                         <i class="fa-regular fa-image text-blue-400 text-2xl cursor-pointer"></i>
-                        <span class="material-symbols-outlined text-blue-400 text-xl cursor-pointer">
+                        <span class="material-symbols-outlined text-blue-400 text-2xl cursor-pointer">
                             gif_box
                         </span>
                         <i class="fa-solid fa-list text-blue-400 text-xl cursor-pointer"></i>
@@ -152,18 +150,35 @@
                                     src="https://pbs.twimg.com/media/G6D5BcGbMAIPQNy?format=jpg&name=small" alt="">
                             </div>
 
-                            <div class="icons flex mx-3">
-                                <div class="iconp flex items-center justify-center space-x-14">
-                                    <i class="fa-regular fa-comment  text-gray-500">45</i>
-                                    <span class="material-symbols-rounded text-gray-500">
-                                        repeat
-                                    </span>
-                                    <i class="fa-regular fa-heart text-gray-500">345</i>
-                                    <span class="material-symbols-rounded text-gray-500">
-                                        bar_chart
-                                    </span>
-                                    <i class="fa-regular fa-bookmark text-gray-500">34</i>
+                            <div class="icons flex justify-between mx-4 my-4 text-sm text-gray-500">
+
+                                <div class="iconp flex items-center justify-center hover:text-blue-400 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full p-2">
+                                    <i class="fa-regular fa-comment ">1k</i>
                                 </div>
+                                <div class="iconp flex items-center justify-center  hover:text-green-400 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full p-2">
+                                    <i class="fa-solid fa-retweet"><span class="font-normal">2k</span></i>
+                                </div>
+                                <div class="iconp flex items-center justify-center  hover:text-pink-400 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full p-2">
+                                    <i class="fa-regular fa-heart"><span class="font-normal">2k</span></i>
+                                </div>
+                                <div class="iconp flex items-center justify-center  hover:text-blue-400 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full p-2">
+                                    <i class="fa-solid fa-chart-simple"><span class="font-normal">2k</span></i>
+                                </div>
+                                <div class="iconp flex items-center justify-center  hover:text-blue-400 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full p-2">
+                                    <i class="fa-regular fa-bookmark"><span class="font-normal"></span></i>
+                                </div>
+                                <div class="iconp flex items-center justify-center  hover:text-blue-400 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full p-2">
+                                    <i class="fa-solid fa-arrow-up-from-bracket "><span class="font-normal"></span></i>
+                                </div>
+                                
+                                    
+                                    
+                                    
+                                    
+                                   
+
+
+                                
                             </div>
                         </div>
                     </div>
@@ -180,10 +195,11 @@
         <div class="third w-full">
 
             <div class="search m-2">
+                <input
+                    class="rounded-full outline-blue-500 w-[70%]  border-[0.2px] border-gray-700 bg-[rgb(0 0 0)] px-4 py-2 "
+                    type="text" placeholder="Search">
 
-                <input class="rounded-full bg-[#16181c] px-4 py-2  " type="text" placeholder="Search">
-
-                <div class="whats bg-[#16181c] m-3 w-1/2 py-5 rounded-xl space-y-3">
+                <div class="whats bg-[rgb(0 0 0)] border-[0.2px] border-gray-700 m-3 w-[70%] py-5 rounded-xl space-y-3">
                     <h1 class="text-xl font-bold px-2">Whats Happening</h1>
                     <div class="item p-3 hover:bg-gray-800 cursor-pointer">
                         <div class="text-sm text-gray-600">Trending in India</div>
@@ -211,7 +227,7 @@
 
                 </div>
 
-                <div class="who bg-[#16181c] m-3 w-1/2 py-5 rounded-xl space-y-3">
+                <div class="who bg-[rgb(0 0 0)] border-[0.2px] border-gray-700 m-3 w-[70%] py-5 rounded-xl space-y-3">
                     <h1 class="text-xl font-bold px-2">Who To Follow</h1>
                     <div class="item p-3 px-3 space-y-4">
                         <div class="font-bold cursor-pointer text-gray-200">CodeWithHarry</div>
@@ -220,9 +236,6 @@
                         <div class="font-bold cursor-pointer text-gray-200">CodingSchool</div>
                     </div>
                     <div class="text-blue-600 px-3 underline">Show More</div>
-
-
-
 
                 </div>
 
