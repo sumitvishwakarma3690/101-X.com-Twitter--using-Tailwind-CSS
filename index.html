@@ -19,15 +19,20 @@
 </head>
 
 <body class="bg-black text-white">
+
     <div class="flex md:container mx-auto">
+
+        <!-- First Section  -->
         <div class="first w-16  md:w-[71%]">
 
+            <!-- Sidebar  -->
             <div class="sidebar flex md:items-end flex-col sticky top-0">
                 <div class="logo w-10 my-4 mx-2 md:mx-16 self-start">
                     <img class="invert-100" src="X_(formerly_Twitter)_logo_late_2025.svg.webp" alt="">
 
                 </div>
 
+                <!-- Sidebar items  -->
                 <ul class="flex flex-col text-xl space-y-3 md:px-11 w-full">
 
                     <li
@@ -83,7 +88,7 @@
                     <li>
                         <div class="button w-full my-4">
                             <button
-                                class="hidden md:block bg-blue-400 px-20 text-xl py-3 rounded-full font-bold ">Post</button>
+                                class="hidden md:block bg-blue-400 px-20 text-xl py-3 rounded-full font-bold cursor-pointer">Post</button>
                             <button class="md:hidden bg-blue-400 px-4 text-xl py-3 rounded-full font-bold ">
                                 <i class="fa-solid fa-feather-pointed"></i>
                             </button>
@@ -91,10 +96,33 @@
                     </li>
                 </ul>
 
+                <!-- User Profile Section  -->
+                <div class="userprofile w-full mt-5 justify-end mx-10 hidden md:flex">
+                    <div
+                        class="item p-3 items-center rounded-full w-fit gap-5 mx-5 justify-center hover:bg-gray-900 flex cursor-pointer">
+
+                        <div class="p1">
+                            <img class="w-12 rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1990839499702910976/6Af4YPfZ_bigger.jpg"
+                                alt="">
+                        </div>
+                        <div class="p2">
+                            <div class="font-bold cursor-pointer text-gray-200  hover:underline">
+                                Sumit Kumar
+                            </div>
+                            <div class="cursor-pointer text-gray-500 text-sm">@sumit_3690</div>
+
+                        </div>
+                        <div class="p3 text-gray-500">
+                            . . .
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
 
-
+        <!-- Second Section  -->
         <div class="second w-full border border-x-gray-700 border-y-black ">
 
             <div class="top flex p-3 relative">
@@ -103,8 +131,12 @@
                 <div class="right  w-1/2 flex justify-center font-bold text-lg">Following</div>
                 <div class="settings mx-2"><i class="fa-solid fa-gear"></i></div>
             </div>
+
+            <!-- Division line  -->
             <div class=" h-[1px] bg-gray-700 w-full"></div>
 
+
+            <!-- Whats Happennig section  -->
             <div class="whatishapp flex gap-4 my-3">
                 <div class="img m-2 w-14">
                     <img class="rounded-full"
@@ -117,33 +149,36 @@
                         <i class="fa-solid fa-earth-asia"></i>
                         <span class="font-bold">Everyone can reply</span>
                     </div>
+
                     <div class="w-[90%] h-[0.2px] bg-gray-700 my-3"></div>
+
                     <div class="flex justify-between">
+                        <div class="blueicons flex gap-2 items-center">
+                            <i class="fa-regular fa-image text-blue-400 text-2xl cursor-pointer"></i>
+                            <span class="material-symbols-outlined text-blue-400 text-2xl cursor-pointer">
+                                gif_box
+                            </span>
+                            <i class="fa-solid fa-list text-blue-400 text-xl cursor-pointer"></i>
+                            <i class="fa-regular fa-face-smile text-blue-400 text-xl cursor-pointer"></i>
+                            <i class="fa-regular fa-calendar text-blue-400 text-xl cursor-pointer"></i>
+                            <i class="fa-solid fa-location-dot text-blue-400 text-xl cursor-pointer"></i>
 
-                    
-                    <div class="blueicons flex gap-2 items-center">
-                        <i class="fa-regular fa-image text-blue-400 text-2xl cursor-pointer"></i>
-                        <span class="material-symbols-outlined text-blue-400 text-2xl cursor-pointer">
-                            gif_box
-                        </span>
-                        <i class="fa-solid fa-list text-blue-400 text-xl cursor-pointer"></i>
-                        <i class="fa-regular fa-face-smile text-blue-400 text-xl cursor-pointer"></i>
-                        <i class="fa-regular fa-calendar text-blue-400 text-xl cursor-pointer"></i>
-                        <i class="fa-solid fa-location-dot text-blue-400 text-xl cursor-pointer"></i>
-
-                    </div>
-                    <div class="postbtn">
-                        <button
-                                class=" bg-blue-400 px-6 mx-5 text-md py-2 rounded-full font-bold ">Post
+                        </div>
+                        <div class="postbtn">
+                            <button class=" bg-blue-400 px-6 mx-5 text-md py-2 rounded-full font-bold ">Post
                             </button>
-                    </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Division line  -->
             <div class="h-[1px] w-full bg-gray-700"></div>
 
+            <!-- Post section  -->
             <div class="posts">
 
+                <!-- Posts  -->
                 <div class="post">
                     <div class="flex">
                         <div class="image m-4">
@@ -308,8 +343,6 @@ lᴉʇun
 
                 </div>
 
-
-
                 <div class="post">
                     <div class="flex">
                         <div class="image m-4">
@@ -362,11 +395,14 @@ lᴉʇun
                     </div>
 
                 </div>
+
+                <!-- Division Line  -->
                 <div class="h-[1px] w-full bg-gray-700"></div>
             </div>
+
         </div>
 
-
+        <!-- Third Section  -->
         <div class="third w-full hidden md:block">
 
             <div class="search m-2">
@@ -375,6 +411,7 @@ lᴉʇun
                     type="text" placeholder="Search">
             </div>
 
+            <!-- What's Section  -->
             <div class="whats   bg-[rgb(0 0 0)] border-[0.2px] border-gray-700 m-3 w-[70%] py-5 rounded-xl space-y-3">
                 <h1 class="text-xl font-bold px-2">Whats Happening</h1>
                 <div class="item p-3 hover:bg-gray-800 cursor-pointer">
@@ -403,66 +440,71 @@ lᴉʇun
 
             </div>
 
+            <!-- Who to follow section  -->
             <div class="who bg-[rgb(0 0 0)] border-[0.2px] border-gray-700 m-3 w-[70%] py-5 rounded-xl space-y-1 ">
                 <h1 class="text-xl font-bold px-2">Who To Follow</h1>
 
                 <div class="item py-2 px-3  justify-between items-center gap-3 flex cursor-pointer">
-                    <div class="flex gap-2" >
-                         <div class="p1">
-                        <img class="w-12 rounded-full" src="https://pbs.twimg.com/profile_images/1582311159910215683/doSdYa8e_bigger.jpg" alt="">
+                    <div class="flex gap-2">
+                        <div class="p1">
+                            <img class="w-12 rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1582311159910215683/doSdYa8e_bigger.jpg"
+                                alt="">
+                        </div>
+                        <div class="p2">
+                            <div class="font-bold cursor-pointer text-gray-200  hover:underline">Surya Kumar Yadav</div>
+                            <div class="cursor-pointer text-gray-500 text-sm">@surya_14kumar</div>
+                        </div>
                     </div>
-                    <div class="p2">
-                        <div class="font-bold cursor-pointer text-gray-200  hover:underline">Surya Kumar Yadav</div>
-                        <div class="cursor-pointer text-gray-500 text-sm">@surya_14kumar</div>
-                    </div>
-                </div>
-                   
+
                     <div class="p3">
-                        <button class="bg-white text-black px-5 py-2 rounded-full font-semibold cursor-pointer">Follow</button>
+                        <button
+                            class="bg-white text-black px-5 py-2 rounded-full font-semibold cursor-pointer">Follow</button>
                     </div>
-                    
                 </div>
+
                 <div class="item py-2 px-3  justify-between items-center gap-3 flex cursor-pointer">
-                    <div class="flex gap-2" >
-                         <div class="p1">
-                        <img class="w-12 rounded-full" src="https://pbs.twimg.com/profile_images/1582311159910215683/doSdYa8e_bigger.jpg" alt="">
+                    <div class="flex gap-2">
+                        <div class="p1">
+                            <img class="w-12 rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1582311159910215683/doSdYa8e_bigger.jpg"
+                                alt="">
+                        </div>
+                        <div class="p2">
+                            <div class="font-bold cursor-pointer text-gray-200  hover:underline">Surya Kumar Yadav</div>
+                            <div class="cursor-pointer text-gray-500 text-sm">@surya_14kumar</div>
+                        </div>
                     </div>
-                    <div class="p2">
-                        <div class="font-bold cursor-pointer text-gray-200  hover:underline">Surya Kumar Yadav</div>
-                        <div class="cursor-pointer text-gray-500 text-sm">@surya_14kumar</div>
-                    </div>
-                </div>
-                   
+
                     <div class="p3">
-                        <button class="bg-white text-black px-5 py-2 rounded-full font-semibold cursor-pointer">Follow</button>
+                        <button
+                            class="bg-white text-black px-5 py-2 rounded-full font-semibold cursor-pointer">Follow</button>
                     </div>
-                    
+
                 </div>
                 <div class="item p-3  justify-between items-center gap-3 flex cursor-pointer">
-                    <div class="flex gap-2" >
-                         <div class="p1">
-                        <img class="w-12 rounded-full" src="https://pbs.twimg.com/profile_images/1582311159910215683/doSdYa8e_bigger.jpg" alt="">
+                    <div class="flex gap-2">
+                        <div class="p1">
+                            <img class="w-12 rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1582311159910215683/doSdYa8e_bigger.jpg"
+                                alt="">
+                        </div>
+                        <div class="p2">
+                            <div class="font-bold cursor-pointer text-gray-200  hover:underline">Surya Kumar Yadav</div>
+                            <div class="cursor-pointer text-gray-500 text-sm">@surya_14kumar</div>
+                        </div>
                     </div>
-                    <div class="p2">
-                        <div class="font-bold cursor-pointer text-gray-200  hover:underline">Surya Kumar Yadav</div>
-                        <div class="cursor-pointer text-gray-500 text-sm">@surya_14kumar</div>
-                    </div>
-                </div>
-                   
+
                     <div class="p3">
-                        <button class="bg-white text-black px-5 py-2 rounded-full font-semibold cursor-pointer">Follow</button>
+                        <button
+                            class="bg-white text-black px-5 py-2 rounded-full font-semibold cursor-pointer">Follow</button>
                     </div>
-                    
+
                 </div>
                 <div class="text-blue-600 px-3 hover:underline cursor-pointer">Show More</div>
 
             </div>
-
-
-
         </div>
-
-
 
     </div>
 
